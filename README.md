@@ -1,2 +1,3 @@
-# ricardoper.github.com
-Ricardo Dos Santos Pereira Webpage
+# Ricardo Dos Santos Pereira Webpage
+- ricardopereira.es
+- ricardoper.github.com
