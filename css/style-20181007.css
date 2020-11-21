@@ -1069,6 +1069,36 @@ section#electronics .item:last-child
 	margin: 0;
 }
 
+section#technologies .item .info .logo
+{
+	margin: 10px auto 0;
+	height: 20px;
+	display: block
+}
+
+@media only screen and (min-width: 768px) {
+	section#technologies .item .info .logo
+	{
+		margin: 10px 0 0
+	}
+}
+
+@media screen and (min-width: 825px) {
+	section#technologies .item .info
+	{
+		position: relative
+	}
+
+	section#technologies .item .info .logo
+	{
+		position: absolute;
+		margin: 0;
+		top: -2px;
+		right: 0;
+		height: 28px
+	}
+}
+
 section div.item div.twelve
 {
 	padding: 6px 0 0;
