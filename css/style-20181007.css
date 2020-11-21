@@ -1069,7 +1069,7 @@ section#electronics .item:last-child
 	margin: 0;
 }
 
-section#technologies .item .info .logo
+section .item .info .logo
 {
 	margin: 10px auto 0;
 	height: 20px;
@@ -1077,19 +1077,19 @@ section#technologies .item .info .logo
 }
 
 @media only screen and (min-width: 768px) {
-	section#technologies .item .info .logo
+	section .item .info .logo
 	{
 		margin: 10px 0 0
 	}
 }
 
 @media screen and (min-width: 825px) {
-	section#technologies .item .info
+	section .item .info
 	{
 		position: relative
 	}
 
-	section#technologies .item .info .logo
+	section .item .info .logo
 	{
 		position: absolute;
 		margin: 0;
