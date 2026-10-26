@@ -1,4 +1,19 @@
-## IDE's ##
+# --- Hugo output and cache ---
+/public/
+/resources/
+.hugo_build.lock
+
+# --- Editors / IDEs ---
 /.idea/
 /.vscode/
 /nbproject/
+*.swp
+*~
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Local scratch ---
+/tmp/
+*.log

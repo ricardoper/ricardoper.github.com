@@ -1,0 +1,35 @@
+site_description: "Systems Administrator, Web Developer and Electronics Technician"
+subtitle: "Cloud Architect & Software Engineer"
+
+nav_label: "Main"
+nav_home: "Home"
+nav_about: "About me"
+nav_technology: "Technology"
+nav_electronics: "Electronics"
+nav_education: "Education"
+nav_show: "Show navigation"
+nav_hide: "Hide navigation"
+lang_label: "Language"
+
+hero_greeting: "My name is Ricardo Pereira"
+hero_intro: "I was born in Porto (Portugal) and I am a <strong>Senior Architect</strong>, <strong>Systems Administrator</strong> and <strong>Electronics Technician</strong>. I enjoy constantly learning and keeping my mind active."
+hero_cta: 'Want to know more <a href="#about">about me</a>? Have a look at <a href="#about">my profile</a>.'
+scroll_to_about: "Go to About me"
+scroll_to_top: "Back to top"
+
+about_title: "About me"
+about_1: "A tireless developer who strives for excellence every day to build high-quality applications. Attentive to the small details and with a strong taste for optimisation, to get more out of the same infrastructure. Experience across several areas makes for a complete, effective developer with a broad view of a project in any of its phases and of the infrastructure or technologies to use."
+about_2: "Experienced in designing distributed, scalable systems that handle several terabytes of data every day; in implementing distributed message-streaming systems; in document, columnar, key-value and relational databases; in search engines; in setting up enterprise servers from scratch along with all the surrounding network; in Cloud Computing systems (IaaS, PaaS, SaaS &amp; FaaS); and in automated server backup systems."
+
+technology_title: "Technology"
+electronics_title: "Electronics"
+education_title: "Education"
+
+present: "Present"
+description_label: "Description"
+technologies_used: "Main technologies used"
+hardware_used: "Most-used hardware"
+web_developer: "Senior Web Developer"
+sysadmin: "Systems Administrator"
+
+design_by: "Based on design by"

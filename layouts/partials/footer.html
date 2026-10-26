@@ -1,0 +1,18 @@
+<footer>
+    <div class="row">
+        <div class="twelve columns">
+            {{ partial "links.html" (dict "footer" true) }}
+
+            <nav class="langs" aria-label="{{ i18n "lang_label" }}">{{ partial "langlinks.html" . }}</nav>
+
+            <ul class="copyright">
+                <li><small>{{ site.Title }} &copy; {{ now.Year }}</small></li>
+                <li><small>{{ i18n "design_by" }} <a href="http://www.styleshout.com/" rel="nofollow">Styleshout</a></small></li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="scrollup" href="#home" title="{{ i18n "scroll_to_top" }}" aria-label="{{ i18n "scroll_to_top" }}">
+        <i class="i-angle-circled-up" aria-hidden="true"></i>
+    </a>
+</footer>

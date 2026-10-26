@@ -1,0 +1,177 @@
+# One block per position, newest first.
+#   start / end   "YYYY-MM" (or "YYYY"); `current: true` shows "Present" instead of `end`
+#   role, about, details, org   plain string, or a map with one entry per language (en / es / pt)
+#   about         HTML allowed
+#   facts         "label: text" bullets; `key` is an i18n key (technologies_used, hardware_used)
+#   groups        alternative to details/facts: bullets under several headings (`title` is an i18n key)
+
+- org: Roche Diagnostics
+  logo: roche.svg
+  role: Principal Software Engineer
+  start: "2024-04"
+  current: true
+  about:
+    en: "<strong>Roche Diagnostics</strong> develops innovative products and services for the prevention, diagnosis, monitoring and screening involved in treating disease."
+    es: "<strong>Roche Diagnostics</strong> desarrolla productos y servicios innovadores destinados a la prevención, diagnóstico, monitorización y screening en el tratamiento de enfermedades."
+    pt: "<strong>Roche Diagnostics</strong> desenvolve produtos e serviços inovadores destinados à prevenção, diagnóstico, monitorização e rastreio no tratamento de doenças."
+  facts:
+    - key: technologies_used
+      text: "Amazon Web Services, API Gateway, IoT Core, DynamoDB, Lambdas, Step Functions, S3, ..., Python, Cloudflare, Linux."
+
+- org: Capgemini
+  logo: capgemini.svg
+  role: Principal at Roche Diagnostics
+  start: "2022-06"
+  end: "2024-03"
+  about:
+    en: "<strong>Roche Diagnostics</strong> develops innovative products and services for the prevention, diagnosis, monitoring and screening involved in treating disease."
+    es: "<strong>Roche Diagnostics</strong> desarrolla productos y servicios innovadores destinados a la prevención, diagnóstico, monitorización y screening en el tratamiento de enfermedades."
+    pt: "<strong>Roche Diagnostics</strong> desenvolve produtos e serviços inovadores destinados à prevenção, diagnóstico, monitorização e rastreio no tratamento de doenças."
+  facts:
+    - key: technologies_used
+      text: "Amazon Web Services, API Gateway, IoT Core, DynamoDB, Lambdas, Step Functions, S3, ..., Python, Cloudflare, Linux."
+
+- org: Netex Learning
+  logo: netex-learning.png
+  role:
+    en: Software Architect
+    es: Arquitecto de Software
+    pt: Arquiteto de Software
+  start: "2020-12"
+  end: "2022-05"
+  about:
+    en: "<strong>Netex Learning</strong> creates applications and services for training in companies and educational institutions, with the technology and innovation that make up its DNA."
+    es: "<strong>Netex Learning</strong> crea aplicaciones y servicios para la formación en empresas e instituciones educativas con la tecnología y la innovación que conforma su ADN."
+    pt: "<strong>Netex Learning</strong> cria aplicações e serviços para a formação em empresas e instituições de ensino, com a tecnologia e a inovação que fazem parte do seu ADN."
+  details:
+    - en: "Head of the Architecture department."
+      es: "Responsable del departamento de Arquitectura."
+      pt: "Responsável pelo departamento de Arquitetura."
+    - en: "Responsible for the entire AWS Cloud architecture and all the cross-cutting components used by every team involved. Driving new technologies, solutions and best practices across all teams. Administrator of the AWS organisation."
+      es: "Responsable de toda la Arquitectura de la Nube de AWS y todos los componentes transversales utilizados por todos los equipos involucrados. Impulsor de nuevas tecnologías, soluciones y mejores prácticas a todos los equipos. Administrador de la organización AWS."
+      pt: "Responsável por toda a arquitetura da Cloud AWS e por todos os componentes transversais utilizados por todas as equipas envolvidas. Impulsionador de novas tecnologias, soluções e boas práticas junto de todas as equipas. Administrador da organização AWS."
+  facts:
+    - key: technologies_used
+      text: "Amazon Web Services, Organizations, RDS, ElastiCache (Redis), AmazonMQ (RabbitMQ), SQS/SNS, Cloudfront, S3, ..., PHP, Java, Linux Ubuntu, Debian."
+
+- org: Cerberu
+  logo: cerberu.webp
+  role:
+    en: "IoT Architect & Systems Administrator"
+    es: "Arquitecto IoT & Administrador Sistemas"
+    pt: "Arquiteto IoT & Administrador de Sistemas"
+  start: "2019-01"
+  end: "2020-11"
+  about:
+    en: "<strong>Cerberu</strong> is a leader in the remote management of hotels, hostels, country houses and holiday apartments."
+    es: "<strong>Cerberu</strong> es líder en gestión remota de hoteles, hostales, casas rurales y apartamentos turísticos."
+    pt: "<strong>Cerberu</strong> é líder na gestão remota de hotéis, hostels, casas de turismo rural e apartamentos turísticos."
+  details:
+    - en: "Technical Leader."
+      es: "Technical Leader."
+      pt: "Líder técnico."
+    - en: "I create IoT (Internet of Things) solutions in every phase (schematic, PCB, SMD/THD assembly, firmware, ...) for several sectors, especially the hotel sector."
+      es: "Creo soluciones IoT (Internet Of Things) en todas sus fases (Esquema, PCB, montaje SMD/THD, firmware, ...) para varios sectores en especial el sector hotelero."
+      pt: "Crio soluções IoT (Internet of Things) em todas as suas fases (esquema, PCB, montagem SMD/THD, firmware, ...) para vários setores, em especial o setor hoteleiro."
+    - en: "Responsible for the entire architecture, 100% cloud-oriented."
+      es: "Responsable de toda la arquitectura orientada 100% a Cloud."
+      pt: "Responsável por toda a arquitetura, orientada a 100% para a Cloud."
+  facts:
+    - key: technologies_used
+      text: "PHP, Python, Golang, Yii, Symfony, FreeRTOS, C, C++, Amazon Web Services, Redis & ElastiCache, RabbitMQ & SQS/SNS, Nginx, Apache HTTP, Linux Ubuntu, Debian."
+    - key: hardware_used
+      text: "Espressif SoC & modules, Nordic nRF SoC, Raspberry Pi"
+
+- org: BEONPRICE
+  logo: beonprice.png
+  role:
+    en: "Software & Systems Architect"
+    es: "Arquitecto de Software & Sistemas"
+    pt: "Arquiteto de Software & Sistemas"
+  start: "2014-01"
+  end: "2018-12"
+  about:
+    en: "<strong>BEONPRICE</strong> is a global leader in an Artificial Intelligence-based Revenue Optimisation solution that maximises hotel revenue."
+    es: "<strong>BEONPRICE</strong> es líder global de una solución de Optimización de Revenue basada en Inteligencia Artificial para maximizar los ingresos del hotel."
+    pt: "<strong>BEONPRICE</strong> é líder global de uma solução de Otimização de Revenue baseada em Inteligência Artificial para maximizar as receitas do hotel."
+  details:
+    - en: "Team Lead of the Architecture department."
+      es: "Jefe de equipo del departamento de Arquitectura."
+      pt: "Chefe de equipa do departamento de Arquitetura."
+    - en: "Creator of, and responsible for, the whole design and roll-out of the current architectures, which are built around scalable, distributed, highly available (micro)services with autohealing, autoregister and autowakeup systems for outages, made up of more than 250 VMs across multiple providers. Event-driven architectures combining multiple programming languages and multiple databases, with intelligent data-processing systems backed by Big Data technologies."
+      es: "Creador y responsable de todo el diseño y puesta en marcha de las arquitecturas actuales que están orientadas a (µ)servicios escalables, distribuidos, de alta disponibilidad, con sistemas de autohealing, autoregister, autowakeup en caídas y compuestos por más de 250 VM's en múltiples proveedores. Arquitecturas orientadas a eventos, compuestas por multi lenguajes de programación, multi base de datos, con sistemas de procesado inteligente de datos apoyados por tecnologías BigData."
+      pt: "Criador e responsável por todo o desenho e colocação em produção das arquiteturas atuais, orientadas para (µ)serviços escaláveis, distribuídos e de alta disponibilidade, com sistemas de autohealing, autoregister e autowakeup em caso de falhas, compostas por mais de 250 VMs em múltiplos fornecedores. Arquiteturas orientadas a eventos, compostas por várias linguagens de programação e várias bases de dados, com sistemas de processamento inteligente de dados apoiados em tecnologias Big Data."
+  facts:
+    - key: technologies_used
+      text: "PHP, Python, Golang, Laravel, Symfony, Amazon Web Services, Google Cloud Platform, Microsoft Azure, MongoDB & DocumentDB, Redis & ElastiCache, Elastic, RabbitMQ & SQS, Apache Kafka, Nginx, Apache HTTP, Pentaho, Beanstalkd, Linux Ubuntu, CentOS, Fedora."
+
+- org: Restalo.es
+  logo: restalo.webp
+  role:
+    en: "Software & Systems Architect"
+    es: "Arquitecto de Software & Sistemas"
+    pt: "Arquiteto de Software & Sistemas"
+  start: "2011-01"
+  end: "2014-01"
+  about:
+    en: "<strong>Restalo.es</strong> is a website for searching and booking restaurants online."
+    es: "<strong>Restalo.es</strong> es una página de búsqueda y reserva de restaurantes online."
+    pt: "<strong>Restalo.es</strong> é um site de pesquisa e reserva de restaurantes online."
+  details:
+    - en: "Team Lead of the Development department."
+      es: "Jefe de equipo del departamento de desarrollo."
+      pt: "Chefe de equipa do departamento de desenvolvimento."
+    - en: "Creator of, and responsible for, the whole design and roll-out of the 100% cloud-oriented architecture."
+      es: "Creador y responsable de todo el diseño y puesta en marcha de la arquitectura orientada 100% a Cloud."
+      pt: "Criador e responsável por todo o desenho e colocação em produção da arquitetura orientada a 100% para a Cloud."
+  facts:
+    - key: technologies_used
+      text: "PHP, Yii, Symfony, Amazon Web Services, MySQL & Aurora, MongoDB, Redis & ElastiCache, Gearman, RabbitMQ & SQS, Nginx, Apache HTTP, Linux Ubuntu, CentOS, Fedora, Windows 2012 Server, JSON/XML Web Services."
+
+- org: Wombat Internet
+  logo: wombat.webp
+  role:
+    en: "Senior Developer & Systems Administrator"
+    es: "Programador Senior & Administrador Sistemas"
+    pt: "Programador Sénior & Administrador de Sistemas"
+  start: "2010-06"
+  end: "2014-01"
+  about:
+    en: "<strong>Wombat Internet</strong> is a company specialising in technology solutions for hotels."
+    es: "<strong>Wombat Internet</strong> es una empresa especialista en soluciones tecnológicas para hoteles."
+    pt: "<strong>Wombat Internet</strong> é uma empresa especialista em soluções tecnológicas para hotéis."
+  groups:
+    - title: web_developer
+      items:
+        - "XHTML, CSS, JavaScript, jQuery, AJAX"
+        - en: "PHP, Zend framework, Smarty, Silex framework, Twig, MySQL, JSON and SOAP Web Services"
+          es: "PHP, Zend framework, Smarty, Silex framework, Twig, MySQL, JSON y SOAP Web Services"
+          pt: "PHP, Zend framework, Smarty, Silex framework, Twig, MySQL, JSON e SOAP Web Services"
+    - title: sysadmin
+      items:
+        - "Apache, Nginx, PHP + FPM, MySQL, APC, XCache, Memcached, Sendmail"
+        - "Amazon Web Services - EC2, EBS, ELB, SES, CloudWatch"
+        - "Ubuntu Linux, CentOS Linux"
+
+- org: Internet Advantage
+  logo: ia.webp
+  role:
+    en: "Junior Developer"
+    es: "Programador Junior"
+    pt: "Programador Júnior"
+  start: "2009-03"
+  end: "2010-06"
+  about:
+    en: "<strong>Internet Advantage</strong> is a digital marketing agency, a pioneer in the development of SEO and SEM in Spain."
+    es: "<strong>Internet Advantage</strong> es una agencia de marketing digital pionera en el desarrollo del SEO y SEM en España."
+    pt: "<strong>Internet Advantage</strong> é uma agência de marketing digital pioneira no desenvolvimento de SEO e SEM em Espanha."
+  groups:
+    - title: web_developer
+      items:
+        - "XHTML, CSS, JavaScript, jQuery, AJAX"
+        - "PHP, MySQL, MS SQL Server 2000-2008"
+        - "Wordpress, phpBB"
+    - title: sysadmin
+      items:
+        - "Windows 2003-2008 Server"
+        - "IIS"

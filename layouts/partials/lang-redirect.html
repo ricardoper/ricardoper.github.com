@@ -1,0 +1,18 @@
+{{- /* First visit to the default-language home: go to the language of the browser (first supported one wins).
+       A language chosen with the selector is stored in localStorage and always takes precedence. */ -}}
+{{- $urls := dict -}}
+{{- range .AllTranslations }}{{ $urls = merge $urls (dict .Language.Lang .RelPermalink) }}{{ end -}}
+<script>
+(function (urls) {
+  var saved, langs, code, i;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  langs = saved ? [saved] : (navigator.languages || [navigator.language]);
+  for (i = 0; i < langs.length; i++) {
+    code = String(langs[i]).slice(0, 2).toLowerCase();
+    if (urls[code]) {
+      if (urls[code] !== location.pathname) location.replace(urls[code] + location.search + location.hash);
+      return;
+    }
+  }
+})({{ $urls | jsonify | safeJS }});
+</script>

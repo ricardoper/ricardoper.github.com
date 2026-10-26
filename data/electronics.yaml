@@ -1,0 +1,91 @@
+# Same format as technology.yaml
+
+- org: Grupo Movilquick
+  logo: movilquick.webp
+  role:
+    en: "Services and Maintenance Manager"
+    es: "Director de Servicios y Mantenimiento"
+    pt: "Diretor de Serviços e Manutenção"
+  start: "2006-04"
+  end: "2009-03"
+  about:
+    en: "<strong>Grupo Movilquick</strong> is a new-technology company offering all kinds of guaranteed solutions through its professional technical service."
+    es: "<strong>Grupo Movilquick</strong> es una empresa de nuevas tecnologías que ofrece todo tipo de soluciones garantizadas mediante su servicio técnico profesional."
+    pt: "<strong>Grupo Movilquick</strong> é uma empresa de novas tecnologias que oferece todo o tipo de soluções garantidas através do seu serviço técnico profissional."
+  details:
+    - en: "Head of technical support"
+      es: "Jefe de asistencia técnica"
+      pt: "Chefe de assistência técnica"
+    - en: "Technical support for mobile phones, games consoles, PDAs, GPS devices, computers, ..."
+      es: "Asistencia técnica de teléfonos móviles, videoconsolas, PDA's, GPS's, ordenadores,..."
+      pt: "Assistência técnica de telemóveis, videoconsolas, PDAs, GPS, computadores, ..."
+    - en: "Installation and maintenance of the entire IT infrastructure (computers, servers, routers, switches, ...)"
+      es: "Instalación y mantenimiento de la totalidad de la estructura informática (ordenadores, servidores, router's, switch's,...)"
+      pt: "Instalação e manutenção de toda a estrutura informática (computadores, servidores, routers, switches, ...)"
+    - en: "Responsible for the development of web applications and the corporate website"
+      es: "Responsable del desarrollo de aplicaciones Web y Site corporativo"
+      pt: "Responsável pelo desenvolvimento de aplicações Web e do site corporativo"
+
+- org: Comar Recreativos Salmantinos
+  logo: comar.webp
+  role:
+    en: "Repair Technician"
+    es: "Técnico Reparación"
+    pt: "Técnico de Reparação"
+  start: "2005-12"
+  end: "2006-04"
+  about:
+    en: "Repair and maintenance of amusement machines (type A and B)."
+    es: "Reparación y mantenimiento de máquinas recreativas (tipo A y B)."
+    pt: "Reparação e manutenção de máquinas recreativas (tipo A e B)."
+
+- org: Teleservice International Portugal
+  logo: teleservice.webp
+  role:
+    en: "ADVANCED Electronics Technician"
+    es: "Técnico Electrónica ADVANCED"
+    pt: "Técnico de Eletrónica ADVANCED"
+  start: "2002-01"
+  end: "2005-12"
+  about:
+    en: "Technical support for mobile phones at levels 3 and 4 (board-level repair), advanced repairs for two years and coordination of several teams of between 26 and 56 people. Optimisation and automation of several routine processes."
+    es: "Asistencia técnica de teléfonos móviles en los niveles 3 y 4 (reparación de la placa), durante dos años reparaciones avanzadas y coordinación de varios equipos entre 26 y 56 personas. Optimización y automatización de varios procesos rutinarios."
+    pt: "Assistência técnica de telemóveis nos níveis 3 e 4 (reparação da placa), durante dois anos reparações avançadas e coordenação de várias equipas entre 26 e 56 pessoas. Otimização e automatização de vários processos rotineiros."
+
+- org: "SGO – Tecnología e Formação"
+  role:
+    en: "Industrial Maintenance Trainer"
+    es: "Formador de Mantenimiento Industrial"
+    pt: "Formador de Manutenção Industrial"
+  start: "2003-01"
+  end: "2004-12"
+  about:
+    en: "Trainer on several courses related to industrial maintenance (automation controllers, PLCs, ...)"
+    es: "Formador de varios cursos relacionados con el área de mantenimiento industrial (autómatas, PLC's, ...)"
+    pt: "Formador de vários cursos relacionados com a área da manutenção industrial (autómatos, PLCs, ...)"
+
+- org: Stand Asla
+  logo: stand-asla.webp
+  role:
+    en: "Electronics Technician"
+    es: "Técnico Electrónica"
+    pt: "Técnico de Eletrónica"
+  start: "1999-11"
+  end: "2002-01"
+  about:
+    en: "Repair and maintenance of car/home alarms and car radios."
+    es: "Reparación y mantenimiento de alarmas auto/casa y auto-radios."
+    pt: "Reparação e manutenção de alarmes auto/casa e auto-rádios."
+
+- org: SUCH
+  logo: such.webp
+  role:
+    en: "Electronics Technician"
+    es: "Técnico Electrónica"
+    pt: "Técnico de Eletrónica"
+  start: "1996-11"
+  end: "1999-11"
+  about:
+    en: "Repair and maintenance of all clinical analysis equipment in hospital laboratories."
+    es: "Reparación y mantenimiento de todos los equipamientos de análisis clínicos de laboratorio hospitalario."
+    pt: "Reparação e manutenção de todos os equipamentos de análises clínicas de laboratório hospitalar."

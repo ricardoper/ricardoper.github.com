@@ -1,0 +1,35 @@
+site_description: "Administrador de Sistemas, Programador Web e Técnico de Eletrónica"
+subtitle: "Cloud Architect & Software Engineer"
+
+nav_label: "Principal"
+nav_home: "Início"
+nav_about: "Sobre mim"
+nav_technology: "Tecnologia"
+nav_electronics: "Eletrónica"
+nav_education: "Educação"
+nav_show: "Mostrar navegação"
+nav_hide: "Ocultar navegação"
+lang_label: "Idioma"
+
+hero_greeting: "Chamo-me Ricardo Pereira"
+hero_intro: "Nasci no Porto (Portugal) e sou <strong>Arquiteto Sénior</strong>, <strong>Administrador de Sistemas</strong> e <strong>Técnico de Eletrónica</strong>. Gosto de estar em constante aprendizagem e de manter a mente ativa."
+hero_cta: 'Queres saber mais <a href="#about">sobre mim</a>? Dá uma vista de olhos ao <a href="#about">meu perfil</a>.'
+scroll_to_about: "Ir para Sobre mim"
+scroll_to_top: "Voltar ao topo"
+
+about_title: "Sobre mim"
+about_1: "Um programador incansável que procura diariamente a excelência para desenvolver aplicações de qualidade. Atento aos pequenos detalhes e com um forte gosto pela otimização, para conseguir dar algo mais com a mesma infraestrutura. A experiência em várias áreas faz dele um programador completo, eficaz e com uma visão ampla de um projeto em qualquer das suas fases, bem como das infraestruturas ou tecnologias a utilizar."
+about_2: "Com experiência em desenhar sistemas distribuídos e escaláveis que gerem vários terabytes de informação diariamente, em implementar sistemas de mensagens em streaming distribuídas, em bases de dados documentais, colunares, chave-valor e relacionais, em motores de pesquisa, em instalações de servidores empresariais de raiz e toda a rede envolvente, em sistemas de Cloud Computing (IaaS, PaaS, SaaS e FaaS) e em sistemas automatizados de cópias de segurança de servidores."
+
+technology_title: "Tecnologia"
+electronics_title: "Eletrónica"
+education_title: "Educação"
+
+present: "Atualidade"
+description_label: "Descrição"
+technologies_used: "Principais tecnologias utilizadas"
+hardware_used: "Hardware mais utilizado"
+web_developer: "Programador Web Sénior"
+sysadmin: "Administrador de Sistemas"
+
+design_by: "Baseado no design de"

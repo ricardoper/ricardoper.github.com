@@ -1,0 +1,67 @@
+baseURL = "https://ricardopereira.es/"
+title = "Ricardo dos Santos Pereira"
+timeZone = "Europe/Madrid"
+
+# English is the default language and lives at "/"; the others live in /es/ and /pt/
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+# Only the home page (and the sitemap) are generated
+disableAliases = true
+disableKinds = ["page", "section", "taxonomy", "term", "RSS"]
+
+[module.hugoVersion]
+  min = "0.168.0"
+
+[sitemap]
+  changeFreq = "monthly"
+  priority = 1.0
+
+[minify]
+  minifyOutput = true
+
+[languages.en]
+  locale = "en-GB"
+  label = "English"
+  weight = 1
+  [languages.en.params]
+    label = "EN"
+    ogLocale = "en_GB"
+
+[languages.es]
+  locale = "es-ES"
+  label = "Español"
+  weight = 2
+  [languages.es.params]
+    label = "ES"
+    ogLocale = "es_ES"
+
+[languages.pt]
+  locale = "pt-PT"
+  label = "Português"
+  weight = 3
+  [languages.pt.params]
+    label = "PT"
+    ogLocale = "pt_PT"
+
+# Same as the defaults, except that the original (full-size) source images are not published
+[[module.mounts]]
+  source = "static"
+  target = "static"
+  files = ["! **.orig.jpg", "! **.full.*"]
+
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "data"
+  target = "data"
+
+[[module.mounts]]
+  source = "i18n"
+  target = "i18n"

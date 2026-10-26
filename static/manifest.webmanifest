@@ -1,0 +1,14 @@
+{
+  "name": "Ricardo dos Santos Pereira",
+  "short_name": "Ricardo Pereira",
+  "description": "Cloud Architect & Software Engineer",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
+  "icons": [
+    { "src": "/imgs/icons/icon-192.webp", "sizes": "192x192", "type": "image/webp", "purpose": "any" },
+    { "src": "/imgs/icons/icon-512.webp", "sizes": "512x512", "type": "image/webp", "purpose": "any" },
+    { "src": "/imgs/icons/icon-maskable-512.webp", "sizes": "512x512", "type": "image/webp", "purpose": "maskable" }
+  ]
+}

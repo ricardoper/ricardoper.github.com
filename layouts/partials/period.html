@@ -1,0 +1,4 @@
+<span class="date">
+  {{- partial "time.html" .start -}}
+  {{- if .current }} - {{ i18n "present" }}{{ else if .end }} - {{ partial "time.html" .end }}{{ end -}}
+</span>

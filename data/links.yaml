@@ -1,0 +1,26 @@
+# Social links shown in the hero and in the footer (`footer_url` overrides `url` in the footer)
+- name: LinkedIn
+  icon: linkedin
+  url: https://www.linkedin.com/in/ricper/
+  footer_url: http://bit.ly/rasp-linkedin
+
+- name: GitHub
+  icon: github
+  url: https://github.com/ricardoper
+
+- name: Bitbucket
+  icon: bitbucket
+  url: https://bitbucket.org/ricard0per
+
+- name: Twitter
+  icon: twitter
+  url: https://twitter.com/Ricard0Per
+
+- name: Facebook
+  icon: facebook
+  url: https://www.facebook.com/touro1981
+
+- name: Email
+  icon: mail
+  url: mailto:hola@ricardopereira.es
+  external: false

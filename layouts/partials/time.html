@@ -1,0 +1,7 @@
+{{- /* "YYYY" or "YYYY-MM" -> <time>; months are written in the page language */ -}}
+{{- $text := . -}}
+{{- if gt (len .) 4 -}}
+  {{- $month := time.Format "January 2006" (time.AsTime (printf "%s-01" .)) -}}
+  {{- $text = printf "%s%s" (upper (substr $month 0 1)) (substr $month 1) -}}
+{{- end -}}
+<time datetime="{{ . }}">{{ $text }}</time>

@@ -1,0 +1,32 @@
+<header id="home">
+    <nav id="nav-wrap" aria-label="{{ i18n "nav_label" }}">
+        <a class="mobile-btn" href="#nav-wrap" title="{{ i18n "nav_show" }}">{{ i18n "nav_show" }}</a>
+        <a class="mobile-btn" href="#" title="{{ i18n "nav_hide" }}">{{ i18n "nav_hide" }}</a>
+
+        <ul id="nav" class="nav">
+            <li class="current"><a href="#home">{{ i18n "nav_home" }}</a></li>
+            <li><a href="#about">{{ i18n "nav_about" }}</a></li>
+            <li><a href="#technologies">{{ i18n "nav_technology" }}</a></li>
+            <li><a href="#electronics">{{ i18n "nav_electronics" }}</a></li>
+            <li><a href="#education">{{ i18n "nav_education" }}</a></li>
+            <li class="lang">{{ partial "langlinks.html" . }}</li>
+        </ul>
+    </nav>
+
+    <div class="row banner">
+        <div class="banner-text">
+            <h1 class="responsive-headline">{{ i18n "hero_greeting" }}</h1>
+
+            <p class="tagline">
+                {{ i18n "hero_intro" | safeHTML }}
+                <br>{{ i18n "hero_cta" | safeHTML }}
+            </p>
+
+            <hr>
+
+            {{ partial "links.html" (dict "footer" false) }}
+        </div>
+    </div>
+
+    <a class="i-angle-circled-down scrolldown" href="#about" title="{{ i18n "scroll_to_about" }}" aria-label="{{ i18n "scroll_to_about" }}"></a>
+</header>

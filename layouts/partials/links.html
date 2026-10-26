@@ -1,0 +1,11 @@
+<ul class="links">
+    {{- range hugo.Data.links }}
+    {{- $external := true }}
+    {{- if isset . "external" }}{{ $external = .external }}{{ end }}
+    <li>
+        <a href="{{ if $.footer }}{{ default .url .footer_url }}{{ else }}{{ .url }}{{ end }}" title="{{ .name }}" aria-label="{{ .name }}"{{ if $external }} target="_blank" rel="me noopener"{{ end }}>
+            <i class="fa i-{{ .icon }}" aria-hidden="true"></i>
+        </a>
+    </li>
+    {{- end }}
+</ul>

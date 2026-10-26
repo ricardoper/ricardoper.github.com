@@ -1,0 +1,6 @@
+{{- /* Returns the value for the current language: .  is either a plain string or a map {en: ..., es: ..., pt: ...} */ -}}
+{{- $v := . -}}
+{{- if reflect.IsMap . -}}
+  {{- $v = index . site.Language.Lang -}}
+{{- end -}}
+{{- return $v -}}

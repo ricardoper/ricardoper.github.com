@@ -1,0 +1,20 @@
+{{ define "main" -}}
+{{ partial "header.html" . }}
+
+
+<main>
+{{ partial "about.html" . }}
+
+
+{{ partial "resume.html" (dict "id" "technologies" "title" "technology_title" "items" hugo.Data.technology) }}
+
+
+{{ partial "resume.html" (dict "id" "electronics" "title" "electronics_title" "items" hugo.Data.electronics) }}
+
+
+{{ partial "resume.html" (dict "id" "education" "title" "education_title" "items" hugo.Data.education) }}
+</main>
+
+
+{{ partial "footer.html" . }}
+{{- end }}
