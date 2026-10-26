@@ -1,0 +1,9 @@
+# Spoken languages (from LinkedIn). `level` is translated.
+- name: { en: "Portuguese", es: "Portugués", pt: "Português" }
+  level: { en: "Native", es: "Nativo", pt: "Nativo" }
+
+- name: { en: "Spanish", es: "Español", pt: "Espanhol" }
+  level: { en: "Full professional proficiency", es: "Competencia profesional completa", pt: "Proficiência profissional plena" }
+
+- name: { en: "English", es: "Inglés", pt: "Inglês" }
+  level: { en: "Professional working proficiency", es: "Competencia profesional", pt: "Proficiência profissional" }

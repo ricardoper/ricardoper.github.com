@@ -701,13 +701,15 @@ section.resume .date {
 	margin-top: 0.6rem
 }
 
-section#experience .item
+section#experience .item,
+section#awards .item
 {
 	margin-top: 0;
 	margin-bottom: 1.5rem;
 }
 
-section#experience .item:last-child
+section#experience .item:last-child,
+section#awards .item:last-child
 {
 	margin-bottom: 0;
 }
@@ -1241,6 +1243,66 @@ section.resume .timeline details.older > .item:first-of-type {
 
 
 /* ==========================================================================
+   Skills
+   ========================================================================== */
+
+.skill-group {
+	margin-bottom: 2.4rem
+}
+
+.skill-group:last-child {
+	margin-bottom: 0
+}
+
+section.resume .skill-group h3 {
+	font: 1.6rem/2.4rem opensans-bold, sans-serif;
+	margin-bottom: .8rem
+}
+
+ul.chips {
+	list-style: none;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: .8rem
+}
+
+ul.chips li {
+	margin: 0;
+	padding: .2rem 1.2rem;
+	font: 1.4rem/2.4rem opensans-regular, sans-serif;
+	color: var(--heading);
+	border: 1px solid var(--rule);
+	border-radius: 2rem;
+	background: var(--hover-bg)
+}
+
+ul.langs {
+	list-style: none;
+	margin: 0
+}
+
+ul.langs li {
+	margin: 0;
+	padding: .2rem 0;
+	line-height: 2.4rem
+}
+
+ul.langs strong {
+	color: var(--heading)
+}
+
+ul.langs span {
+	font-family: librebaskerville-italic, serif;
+	color: var(--info)
+}
+
+ul.langs span:before {
+	content: '\2022';
+	margin: 0 .8rem
+}
+
+/* ==========================================================================
    Certifications
    ========================================================================== */
 
@@ -1642,6 +1704,19 @@ section#certifications details.older {
 
 	#home ul#nav .theme-toggle {
 		margin: 1rem 0
+	}
+}
+
+
+/* Seven menu items plus the two buttons: tighten the menu on mid-size screens */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+	#home #nav-wrap {
+		letter-spacing: 0.1rem
+	}
+
+	#home ul#nav li a {
+		padding-left: 0.7rem;
+		padding-right: 0.7rem
 	}
 }
 

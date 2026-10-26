@@ -1,9 +1,9 @@
-{{- /* Context: dict "id" <section id> "title" <i18n key> "items" <data list> ["fold" true]
+{{- /* Context: dict "id" <section id> "title" <i18n key> "items" <data list> ["fold" true] ["foldBefore" <year>] ["olderKey" <i18n key>]
        With "fold", positions that started before params.foldBefore go inside a <details>. */ -}}
 {{- $recent := slice }}
 {{- $older := slice }}
 {{- if .fold }}
-  {{- $limit := int site.Params.foldBefore }}
+  {{- $limit := int (or .foldBefore site.Params.foldBefore) }}
   {{- range .items }}
     {{- if ge (int (substr .start 0 4)) $limit }}{{ $recent = $recent | append . }}{{ else }}{{ $older = $older | append . }}{{ end }}
   {{- end }}
@@ -29,7 +29,7 @@
             {{- if $older }}
 
             <details class="older">
-                <summary>{{ i18n "show_older" (dict "Count" (len $older)) }}</summary>
+                <summary>{{ i18n (or .olderKey "show_older") (dict "Count" (len $older)) }}</summary>
                 {{- range $older }}
                 {{ partial "resume-item.html" . }}
                 {{- end }}

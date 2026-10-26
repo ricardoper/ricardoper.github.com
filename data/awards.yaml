@@ -1,0 +1,40 @@
+# Awards and competitions (from LinkedIn "Honors"), newest first. Same format as experience.yaml.
+# Those before the `foldBefore` given in layouts/index.html are folded.
+
+- title:
+    en: "6th place - 36th WorldSkills Competition (Industrial Electronics)"
+    es: "6º clasificado - 36ª WorldSkills Competition (Electrónica Industrial)"
+    pt: "6.º classificado - 36.ª WorldSkills Competition (Eletrónica Industrial)"
+  org:
+    en: "Seoul, South Korea"
+    es: "Seúl, Corea del Sur"
+    pt: "Seul, Coreia do Sul"
+  start: "2001-09"
+
+- title:
+    en: "1st place - National Vocational Training Competition (Industrial Electronics)"
+    es: "1º clasificado - Concurso Nacional de Formación Profesional (Electrónica Industrial)"
+    pt: "1.º classificado - Concurso Nacional de Formação Profissional (Eletrónica Industrial)"
+  org: "Feira Internacional de Lisboa (FIL), Portugal"
+  start: "2000-06"
+
+- title:
+    en: "1st place - Regional Vocational Training Competition (Industrial Electronics)"
+    es: "1º clasificado - Concurso Regional de Formación Profesional (Electrónica Industrial)"
+    pt: "1.º classificado - Concurso Regional de Formação Profissional (Eletrónica Industrial)"
+  org: "Chaves, Portugal"
+  start: "2000-02"
+
+- title:
+    en: "4th place - National Vocational Training Competition (Industrial Electronics)"
+    es: "4º clasificado - Concurso Nacional de Formación Profesional (Electrónica Industrial)"
+    pt: "4.º classificado - Concurso Nacional de Formação Profissional (Eletrónica Industrial)"
+  org: "Faro, Portugal"
+  start: "1999-03"
+
+- title:
+    en: "1st place - Regional Vocational Training Competition (Industrial Electronics)"
+    es: "1º clasificado - Concurso Regional de Formación Profesional (Electrónica Industrial)"
+    pt: "1.º classificado - Concurso Regional de Formação Profissional (Eletrónica Industrial)"
+  org: "Viana do Castelo, Portugal"
+  start: "1998-11"

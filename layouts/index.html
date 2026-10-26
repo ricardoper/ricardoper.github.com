@@ -6,6 +6,9 @@
 {{ partial "about.html" . }}
 
 
+{{ partial "skills.html" . }}
+
+
 {{ partial "resume.html" (dict "id" "experience" "title" "experience_title" "items" hugo.Data.experience "fold" true) }}
 
 
@@ -13,6 +16,9 @@
 
 
 {{ partial "certifications.html" . }}
+
+
+{{ partial "resume.html" (dict "id" "awards" "title" "awards_title" "items" hugo.Data.awards "fold" true "foldBefore" 2000 "olderKey" "show_older_awards") }}
 </main>
 
 

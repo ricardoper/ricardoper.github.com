@@ -9,6 +9,7 @@
     "image" ("imgs/profile.jpg" | absURL)
     "jobTitle" (i18n "subtitle")
     "description" (i18n "site_description")
+    "knowsLanguage" (slice "pt" "en" "es")
     "sameAs" $sameAs }}
 {{- range hugo.Data.experience }}
   {{- if and .current (not (isset $person "worksFor")) }}
