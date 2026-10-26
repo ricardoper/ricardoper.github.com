@@ -1,8 +1,8 @@
-# Derived images. Sources are kept in static/imgs/ and are never published (*.orig.jpg, *.full.*).
+# Derived images. Sources are kept in static/imgs/sources/ (and *.full.*) and are never published.
 # Requires ImageMagick (the `magick` command) built with WebP and SVG support, and Python 3.
 
 HEADER_ART  := static/imgs/headerBackground.full.svg
-ORIG_HEADER := static/imgs/headerBackground.orig.jpg
+ORIG_HEADER := static/imgs/sources/headerBackground.orig.jpg
 # The old header photo carried a black layer of ~68% (= multiply by 0.32)
 HEADER_DARK := 0.32
 

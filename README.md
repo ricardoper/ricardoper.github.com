@@ -21,8 +21,8 @@ make preview      # build and serve public/ like production
 - `i18n/{en,es,pt}.yaml`: interface texts (menu, hero, about me, labels).
 - `layouts/`: the HTML templates (one layout for the three languages).
 - `assets/`: CSS and JS (minified and fingerprinted at build time). Sizes use `rem`; from 1600 px of viewport width the root font size grows with the viewport, so the whole page scales on large (4K) screens.
-- `static/`: fonts, images, icons, `robots.txt`, `CNAME`. `*.orig.jpg` and `*.full.*` are kept as sources but are not published.
-- `mk/`: Makefile fragments. `make header-art` redraws the hero artwork (`scripts/header_art.py`, source `static/imgs/headerBackground.full.svg`) and exports the WebP backgrounds; `make header-photo` builds them from the original photo (`headerBackground.orig.jpg`) instead. `make og-images` rebuilds the social previews (`og-image.{en,es,pt}.jpg`, `scripts/og_images.py`, needs Pillow); run it after changing the hero artwork.
+- `static/`: fonts, images, icons, `robots.txt`, `CNAME`. `static/imgs/sources/` (originals, e.g. the Porto photo) and `*.full.*` are kept as sources but are not published.
+- `mk/`: Makefile fragments. `make header-art` redraws the hero artwork (`scripts/header_art.py`, source `static/imgs/headerBackground.full.svg`) and exports the WebP backgrounds; `make header-photo` builds them from the original photo (`static/imgs/sources/headerBackground.orig.jpg`) instead. `make og-images` rebuilds the social previews (`og-image.{en,es,pt}.jpg`, `scripts/og_images.py`, needs Pillow); run it after changing the hero artwork.
 - `hugo.toml`: languages and site configuration.
 
 ## Features worth knowing
