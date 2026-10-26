@@ -1,126 +1,49 @@
 @font-face {
 	font-family: opensans-regular;
-	src: url(../fonts/opensans/OpenSans-Regular.eot);
-	src: url(../fonts/opensans/OpenSans-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-Regular.woff) format('woff'), url(../fonts/opensans/OpenSans-Regular.ttf) format('truetype'), url(../fonts/opensans/OpenSans-Regular.svg#open_sansregular) format('svg');
+	src: url(../fonts/opensans/OpenSans-Regular.woff2) format('woff2'), url(../fonts/opensans/OpenSans-Regular.woff) format('woff');
 	font-weight: 400;
-	font-style: normal
+	font-style: normal;
+	font-display: swap
 }
 
 @font-face {
 	font-family: opensans-italic;
-	src: url(../fonts/opensans/OpenSans-Italic.eot);
-	src: url(../fonts/opensans/OpenSans-Italic.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-Italic.woff) format('woff'), url(../fonts/opensans/OpenSans-Italic.ttf) format('truetype'), url(../fonts/opensans/OpenSans-Italic.svg#open_sansitalic) format('svg');
+	src: url(../fonts/opensans/OpenSans-Italic.woff2) format('woff2'), url(../fonts/opensans/OpenSans-Italic.woff) format('woff');
 	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: opensans-light;
-	src: url(../fonts/opensans/OpenSans-Light.eot);
-	src: url(../fonts/opensans/OpenSans-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-Light.woff) format('woff'), url(../fonts/opensans/OpenSans-Light.ttf) format('truetype'), url(../fonts/opensans/OpenSans-Light.svg#open_sanslight) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: opensans-light-italic;
-	src: url(../fonts/opensans/OpenSans-LightItalic.eot);
-	src: url(../fonts/opensans/OpenSans-LightItalic.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-LightItalic.woff) format('woff'), url(../fonts/opensans/OpenSans-LightItalic.ttf) format('truetype'), url(../fonts/opensans/OpenSans-LightItalic.svg#open_sanslight_italic) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: opensans-semibold;
-	src: url(../fonts/opensans/OpenSans-Semibold.eot);
-	src: url(../fonts/opensans/OpenSans-Semibold.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-Semibold.woff) format('woff'), url(../fonts/opensans/OpenSans-Semibold.ttf) format('truetype'), url(../fonts/opensans/OpenSans-Semibold.svg#open_sanssemibold) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: opensans-semibold-italic;
-	src: url(../fonts/opensans/OpenSans-SemiboldItalic.eot);
-	src: url(../fonts/opensans/OpenSans-SemiboldItalic.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-SemiboldItalic.woff) format('woff'), url(../fonts/opensans/OpenSans-SemiboldItalic.ttf) format('truetype'), url(../fonts/opensans/OpenSans-SemiboldItalic.svg#open_sanssemibold_italic) format('svg');
-	font-weight: 400;
-	font-style: normal
+	font-style: normal;
+	font-display: swap
 }
 
 @font-face {
 	font-family: opensans-bold;
-	src: url(../fonts/opensans/OpenSans-Bold.eot);
-	src: url(../fonts/opensans/OpenSans-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-Bold.woff) format('woff'), url(../fonts/opensans/OpenSans-Bold.ttf) format('truetype'), url(../fonts/opensans/OpenSans-Bold.svg#open_sansbold) format('svg');
+	src: url(../fonts/opensans/OpenSans-Bold.woff2) format('woff2'), url(../fonts/opensans/OpenSans-Bold.woff) format('woff');
 	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: opensans-bold-italic;
-	src: url(../fonts/opensans/OpenSans-BoldItalic.eot);
-	src: url(../fonts/opensans/OpenSans-BoldItalic.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-BoldItalic.woff) format('woff'), url(../fonts/opensans/OpenSans-BoldItalic.ttf) format('truetype'), url(../fonts/opensans/OpenSans-BoldItalic.svg#open_sansbold_italic) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: opensans-extrabold;
-	src: url(../fonts/opensans/OpenSans-ExtraBold.eot);
-	src: url(../fonts/opensans/OpenSans-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-ExtraBold.woff) format('woff'), url(../fonts/opensans/OpenSans-ExtraBold.ttf) format('truetype'), url(../fonts/opensans/OpenSans-ExtraBold.svg#open_sansextrabold) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: opensans-extrabold-italic;
-	src: url(../fonts/opensans/OpenSans-ExtraBoldItalic.eot);
-	src: url(../fonts/opensans/OpenSans-ExtraBoldItalic.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans/OpenSans-ExtraBoldItalic.woff) format('woff'), url(../fonts/opensans/OpenSans-ExtraBoldItalic.ttf) format('truetype'), url(../fonts/opensans/OpenSans-ExtraBoldItalic.svg#open_sansextrabold_italic) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: librebaskerville-bold;
-	src: url(../fonts/librebaskerville/librebaskerville-bold.eot);
-	src: url(../fonts/librebaskerville/librebaskerville-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/librebaskerville/librebaskerville-bold.woff) format('woff'), url(../fonts/librebaskerville/librebaskerville-bold.ttf) format('truetype'), url(../fonts/librebaskerville/librebaskerville-bold.svg#libre_baskervillebold) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: librebaskerville-italic;
-	src: url(../fonts/librebaskerville/librebaskerville-italic.eot);
-	src: url(../fonts/librebaskerville/librebaskerville-italic.eot?#iefix) format('embedded-opentype'), url(../fonts/librebaskerville/librebaskerville-italic.woff) format('woff'), url(../fonts/librebaskerville/librebaskerville-italic.ttf) format('truetype'), url(../fonts/librebaskerville/librebaskerville-italic.svg#libre_baskervilleitalic) format('svg');
-	font-weight: 400;
-	font-style: normal
+	font-style: normal;
+	font-display: swap
 }
 
 @font-face {
 	font-family: librebaskerville-regular;
-	src: url(../fonts/librebaskerville/librebaskerville-regular.eot);
-	src: url(../fonts/librebaskerville/librebaskerville-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/librebaskerville/librebaskerville-regular.woff) format('woff'), url(../fonts/librebaskerville/librebaskerville-regular.ttf) format('truetype'), url(../fonts/librebaskerville/librebaskerville-regular.svg#libre_baskervilleregular) format('svg');
+	src: url(../fonts/librebaskerville/librebaskerville-regular.woff2) format('woff2'), url(../fonts/librebaskerville/librebaskerville-regular.woff) format('woff');
 	font-weight: 400;
-	font-style: normal
+	font-style: normal;
+	font-display: swap
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-	@font-face {
-		font-family: opensans-semibold;
-		src: url(../fonts/opensans/OpenSans-Semibold.svg#open_sanssemibold) format('svg')
-	}
-
-	@font-face {
-		font-family: opensans-bold;
-		src: url(../fonts/opensans/OpenSans-Bold.svg#open_sansbold) format('svg')
-	}
+@font-face {
+	font-family: librebaskerville-italic;
+	src: url(../fonts/librebaskerville/librebaskerville-italic.woff2) format('woff2'), url(../fonts/librebaskerville/librebaskerville-italic.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap
 }
-
 
 @font-face {
 	font-family: icons;
-	src: url(../fonts/icons/icons.eot?55554905);
-	src: url(../fonts/icons/icons.eot?55554905#iefix) format('embedded-opentype'), url(../fonts/icons/icons.woff?55554905) format('woff'), url(../fonts/icons/icons.ttf?55554905) format('truetype'), url(../fonts/icons/icons.svg?55554905#icons) format('svg');
+	src: url(../fonts/icons/icons.woff2?55554905) format('woff2'), url(../fonts/icons/icons.woff?55554905) format('woff');
 	font-weight: 400;
-	font-style: normal
+	font-style: normal;
+	font-display: block
 }
 
 [class*=" i-"]:before, [class^=i-]:before {
@@ -149,84 +72,20 @@
 	content: '\e801'
 }
 
-.i-dropbox:before {
-	content: '\e802'
-}
-
 .i-facebook:before {
 	content: '\e803'
-}
-
-.i-github-squared:before {
-	content: '\e804'
 }
 
 .i-github:before {
 	content: '\e805'
 }
 
-.i-facebook-squared:before {
-	content: '\e806'
-}
-
-.i-bitbucket-squared:before {
-	content: '\e807'
-}
-
-.i-github-circled:before {
-	content: '\e808'
-}
-
-.i-google:before {
-	content: '\e809'
-}
-
-.i-gplus:before {
-	content: '\e80a'
-}
-
-.i-gplus-squared:before {
-	content: '\e80b'
-}
-
-.i-linkedin-squared:before {
-	content: '\e80c'
-}
-
-.i-skype:before {
-	content: '\e80d'
-}
-
-.i-twitter:before {
-	content: '\e80e'
-}
-
-.i-twitter-squared:before {
-	content: '\e80f'
-}
-
-.i-mail-alt:before {
-	content: '\e810'
-}
-
 .i-mail:before {
 	content: '\e811'
 }
 
-.i-download:before {
-	content: '\e812'
-}
-
-.i-upload:before {
-	content: '\e813'
-}
-
-.i-download-cloud:before {
-	content: '\e814'
-}
-
-.i-upload-cloud:before {
-	content: '\e815'
+.i-twitter:before {
+	content: '\e80e'
 }
 
 .i-angle-circled-down:before {
@@ -236,134 +95,6 @@
 .i-angle-circled-up:before {
 	content: '\e817'
 }
-
-.i-angle-circled-right:before {
-	content: '\e818'
-}
-
-.i-angle-circled-left:before {
-	content: '\e819'
-}
-
-.i-angle-down:before {
-	content: '\e81a'
-}
-
-.i-angle-up:before {
-	content: '\e81b'
-}
-
-.i-angle-right:before {
-	content: '\e81c'
-}
-
-.i-angle-left:before {
-	content: '\e81d'
-}
-
-.i-up-open:before {
-	content: '\e81e'
-}
-
-.i-right-open:before {
-	content: '\e81f'
-}
-
-.i-left-open:before {
-	content: '\e820'
-}
-
-.i-down-open:before {
-	content: '\e821'
-}
-
-.i-menu:before {
-	content: '\e822'
-}
-
-.animate-spin {
-	-moz-animation: spin 2s infinite linear;
-	-o-animation: spin 2s infinite linear;
-	-webkit-animation: spin 2s infinite linear;
-	animation: spin 2s infinite linear;
-	display: inline-block
-}
-
-@-moz-keyframes spin {
-	0% {
-		-moz-transform: rotate(0);
-		-o-transform: rotate(0);
-		-webkit-transform: rotate(0);
-		transform: rotate(0)
-	}
-	100% {
-		-moz-transform: rotate(359deg);
-		-o-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg)
-	}
-}
-
-@-webkit-keyframes spin {
-	0% {
-		-moz-transform: rotate(0);
-		-o-transform: rotate(0);
-		-webkit-transform: rotate(0);
-		transform: rotate(0)
-	}
-	100% {
-		-moz-transform: rotate(359deg);
-		-o-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg)
-	}
-}
-
-@-o-keyframes spin {
-	0% {
-		-moz-transform: rotate(0);
-		-o-transform: rotate(0);
-		-webkit-transform: rotate(0);
-		transform: rotate(0)
-	}
-	100% {
-		-moz-transform: rotate(359deg);
-		-o-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg)
-	}
-}
-
-@-ms-keyframes spin {
-	0% {
-		-moz-transform: rotate(0);
-		-o-transform: rotate(0);
-		-webkit-transform: rotate(0);
-		transform: rotate(0)
-	}
-	100% {
-		-moz-transform: rotate(359deg);
-		-o-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg)
-	}
-}
-
-@keyframes spin {
-	0% {
-		-moz-transform: rotate(0);
-		-o-transform: rotate(0);
-		-webkit-transform: rotate(0);
-		transform: rotate(0)
-	}
-	100% {
-		-moz-transform: rotate(359deg);
-		-o-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg)
-	}
-}
-
 
 abbr, address, article, aside, b, blockquote, body, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var {
 	margin: 0;
@@ -380,8 +111,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 *, :after, :before {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box
 }
 
@@ -394,7 +123,14 @@ body, html {
 }
 
 html {
-	font-size: 62.5%
+	font-size: 62.5%;
+	scroll-behavior: smooth
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto
+	}
 }
 
 body {
@@ -459,7 +195,7 @@ h6 {
 p {
 	margin: 0 0 15px;
 	line-height: 1.6em;
-	text-align: justify;
+	text-align: justify
 }
 
 em {
@@ -479,9 +215,6 @@ hr {
 
 a {
 	outline: 0;
-	-webkit-transition: color .3s ease-in-out;
-	-moz-transition: color .3s ease-in-out;
-	-o-transition: color .3s ease-in-out;
 	transition: color .3s ease-in-out
 }
 
@@ -531,14 +264,6 @@ img {
 	clear: both
 }
 
-.ie .row {
-	width: 1000px
-}
-
-.narrow .row {
-	max-width: 980px
-}
-
 .row .row {
 	width: auto;
 	max-width: none;
@@ -550,204 +275,27 @@ img {
 	display: table
 }
 
-.column, .columns {
+.columns {
 	position: relative;
 	padding: 0 20px;
 	min-height: 1px;
 	float: left
 }
 
-.column.centered, .columns.centered {
-	float: none;
-	margin: 0 auto
-}
-
-.column.collapsed, .columns.collapsed, .row.collapsed > .column, .row.collapsed > .columns {
-	padding: 0
-}
-
-[class*=column] + [class*=column].end, [class*=column] + [class*=column]:last-child {
+[class*=column] + [class*=column]:last-child {
 	float: right
-}
-
-.row .one {
-	width: 8.33333%
-}
-
-.row .two {
-	width: 16.66667%
 }
 
 .row .three {
 	width: 25%
 }
 
-.row .four {
-	width: 33.33333%
-}
-
-.row .five {
-	width: 41.66667%
-}
-
-.row .six {
-	width: 50%
-}
-
-.row .seven {
-	width: 58.33333%
-}
-
-.row .eight {
-	width: 66.66667%
-}
-
 .row .nine {
 	width: 75%
 }
 
-.row .ten {
-	width: 83.33333%
-}
-
-.row .eleven {
-	width: 91.66667%
-}
-
 .row .twelve {
 	width: 100%
-}
-
-.row .offset-1 {
-	margin-left: 8.33333%
-}
-
-.row .offset-2 {
-	margin-left: 16.66667%
-}
-
-.row .offset-3 {
-	margin-left: 25%
-}
-
-.row .offset-4 {
-	margin-left: 33.33333%
-}
-
-.row .offset-5 {
-	margin-left: 41.66667%
-}
-
-.row .offset-6 {
-	margin-left: 50%
-}
-
-.row .offset-7 {
-	margin-left: 58.33333%
-}
-
-.row .offset-8 {
-	margin-left: 66.66667%
-}
-
-.row .offset-9 {
-	margin-left: 75%
-}
-
-.row .offset-10 {
-	margin-left: 83.33333%
-}
-
-.row .offset-11 {
-	margin-left: 91.66667%
-}
-
-.row .push-1 {
-	left: 8.33333%
-}
-
-.row .pull-1 {
-	right: 8.33333%
-}
-
-.row .push-2 {
-	left: 16.66667%
-}
-
-.row .pull-2 {
-	right: 16.66667%
-}
-
-.row .push-3 {
-	left: 25%
-}
-
-.row .pull-3 {
-	right: 25%
-}
-
-.row .push-4 {
-	left: 33.33333%
-}
-
-.row .pull-4 {
-	right: 33.33333%
-}
-
-.row .push-5 {
-	left: 41.66667%
-}
-
-.row .pull-5 {
-	right: 41.66667%
-}
-
-.row .push-6 {
-	left: 50%
-}
-
-.row .pull-6 {
-	right: 50%
-}
-
-.row .push-7 {
-	left: 58.33333%
-}
-
-.row .pull-7 {
-	right: 58.33333%
-}
-
-.row .push-8 {
-	left: 66.66667%
-}
-
-.row .pull-8 {
-	right: 66.66667%
-}
-
-.row .push-9 {
-	left: 75%
-}
-
-.row .pull-9 {
-	right: 75%
-}
-
-.row .push-10 {
-	left: 83.33333%
-}
-
-.row .pull-10 {
-	right: 83.33333%
-}
-
-.row .push-11 {
-	left: 91.66667%
-}
-
-.row .pull-11 {
-	right: 91.66667%
 }
 
 @media only screen and (max-width: 767px) {
@@ -757,7 +305,7 @@ img {
 		padding: 0
 	}
 
-	.column, .columns {
+	.columns {
 		width: auto !important;
 		float: none;
 		margin-left: 0;
@@ -771,12 +319,8 @@ img {
 		margin: 0 -30px
 	}
 
-	[class*=bgrid] [class*=column] + [class*=column]:last-child, [class*=column] + [class*=column]:last-child {
+	[class*=column] + [class*=column]:last-child {
 		float: none
-	}
-
-	.row .offset-1, .row .offset-10, .row .offset-11, .row .offset-2, .row .offset-3, .row .offset-4, .row .offset-5, .row .offset-6, .row .offset-7, .row .offset-8, .row .offset-9 {
-		margin-left: 0
 	}
 }
 
@@ -786,15 +330,13 @@ img {
 	}
 }
 
-@media screen and (min-width: 1200px) {
-	.wide .row {
-		max-width: 1180px
-	}
-}
-
-
 .opaque {
 	background-color: #333
+}
+
+#home #nav-wrap.nav-hidden {
+	opacity: 0;
+	visibility: hidden
 }
 
 #home, #home .banner, #home ul#nav {
@@ -820,12 +362,12 @@ img {
 
 #home {
 	position: relative;
-	height: 800px;
+	height: 100vh;
+	height: 100dvh;
 	min-height: 500px;
 	width: 100%;
-	background: url(../imgs/headerBackground.jpg) top center no-repeat #161415;
-	background-size: cover !important;
-	-webkit-background-size: cover !important
+	background: url(../imgs/headerBackground.webp) top center no-repeat #161415;
+	background-size: cover;
 }
 
 #home:before {
@@ -901,9 +443,6 @@ img {
 	font-size: 52px;
 	line-height: 1;
 	border-radius: 100%;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out
 }
 
@@ -919,6 +458,7 @@ img {
 }
 
 #home #nav-wrap {
+	transition: opacity .4s, visibility .4s;
 	font: 12px opensans-bold, sans-serif;
 	width: 100%;
 	letter-spacing: 2.5px;
@@ -956,10 +496,6 @@ img {
 	line-height: 32px;
 	text-align: left;
 	color: #fff;
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out
 }
 
@@ -1177,9 +713,6 @@ footer a.scrollup {
 	text-align: center;
 	background-color: #fff;
 	border-radius: 100%;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out
 }
 
