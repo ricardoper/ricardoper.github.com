@@ -145,7 +145,7 @@
 	window.addEventListener('beforeprint', printOpen);
 	window.addEventListener('afterprint', printRestore);
 
-	[].forEach.call(document.querySelectorAll('[data-print]'), function (button) {
+	[].forEach.call(document.querySelectorAll('button[data-print]'), function (button) {
 		button.hidden = false;
 		button.addEventListener('click', function () { window.print(); });
 	});

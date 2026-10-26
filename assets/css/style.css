@@ -1622,7 +1622,7 @@ section.resume .timeline details.older > .item:first-of-type {
 	}
 
 	#home .links li a:after {
-		content: attr(data-print);
+		content: attr(data-url);
 		margin-left: 1mm
 	}
 

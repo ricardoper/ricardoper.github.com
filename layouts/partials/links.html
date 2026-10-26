@@ -4,7 +4,7 @@
     {{- $label := .url | replaceRE "^(https?://(www\\.)?|mailto:)" "" | strings.TrimSuffix "/" }}
     {{- if isset . "external" }}{{ $external = .external }}{{ end }}
     <li>
-        <a href="{{ if $.footer }}{{ default .url .footer_url }}{{ else }}{{ .url }}{{ end }}" title="{{ .name }}" aria-label="{{ .name }}" data-print="{{ $label }}"{{ if $external }} target="_blank" rel="me noopener"{{ end }}>
+        <a href="{{ if $.footer }}{{ default .url .footer_url }}{{ else }}{{ .url }}{{ end }}" title="{{ .name }}" aria-label="{{ .name }}" data-url="{{ $label }}"{{ if $external }} target="_blank" rel="me noopener"{{ end }}>
             <i class="fa i-{{ .icon }}" aria-hidden="true"></i>
         </a>
     </li>
