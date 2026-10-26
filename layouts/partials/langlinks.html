@@ -1,3 +1,3 @@
 {{- range .AllTranslations }}
-<a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" data-lang="{{ .Language.Lang }}" title="{{ .Language.Label }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="page"{{ end }}>{{ .Language.Params.label }}</a>
+<a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" data-lang="{{ .Language.Lang }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a>
 {{- end }}

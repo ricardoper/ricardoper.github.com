@@ -1,0 +1,8 @@
+<details class="lang-menu">
+    <summary title="{{ i18n "lang_label" }}">{{ site.Language.Params.label }}</summary>
+    <ul>
+        {{- range .AllTranslations }}
+        <li><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" data-lang="{{ .Language.Lang }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a></li>
+        {{- end }}
+    </ul>
+</details>

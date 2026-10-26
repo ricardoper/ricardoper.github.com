@@ -39,6 +39,7 @@
 		var hide = y > h * 0.1 && y < h && window.innerWidth > 768;
 
 		nav.classList.toggle('nav-hidden', hide);
+		if (hide) closeLangMenus();
 		nav.classList.toggle('opaque', y >= h * 0.1);
 	}
 
@@ -56,6 +57,23 @@
 		fitHeadline();
 		onScroll();
 	}
+
+	// Desplegable de idioma: se cierra al hacer clic fuera, con Escape o al ocultarse el menu
+	var langMenus = document.querySelectorAll('.lang-menu');
+
+	function closeLangMenus(except) {
+		[].forEach.call(langMenus, function (m) {
+			if (m !== except) m.open = false;
+		});
+	}
+
+	document.addEventListener('click', function (e) {
+		closeLangMenus(e.target.closest ? e.target.closest('.lang-menu') : null);
+	});
+
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape') closeLangMenus();
+	});
 
 	// Recuerda el idioma elegido para que la raiz no vuelva a redirigir
 	[].forEach.call(document.querySelectorAll('a[data-lang]'), function (a) {
