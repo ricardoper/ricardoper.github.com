@@ -10,6 +10,19 @@
             <p>{{ i18n "about_1" | safeHTML }}</p>
 
             <p>{{ i18n "about_2" | safeHTML }}</p>
+
+            <div class="languages">
+                <ul aria-label="{{ i18n "languages_title" }}">
+                    {{- range hugo.Data.languages }}
+                    {{- $score := .level_score }}
+                    <li>
+                        <strong>{{ partial "tr.html" .name }}</strong>
+                        <span class="dots" aria-hidden="true">{{ range seq 5 }}<i{{ if le . $score }} class="on"{{ end }}></i>{{ end }}</span>
+                        <span class="level">{{ partial "tr.html" .level }}</span>
+                    </li>
+                    {{- end }}
+                </ul>
+            </div>
         </div>
     </div>
 </section>

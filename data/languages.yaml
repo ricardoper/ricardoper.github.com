@@ -1,9 +1,13 @@
-# Spoken languages (from LinkedIn). `level` is translated.
+# Spoken languages (from LinkedIn), shown in "About me".
+# level_score follows LinkedIn's own scale: 1 elementary, 2 limited working, 3 professional working, 4 full professional, 5 native.
 - name: { en: "Portuguese", es: "Portugués", pt: "Português" }
   level: { en: "Native", es: "Nativo", pt: "Nativo" }
+  level_score: 5
 
 - name: { en: "Spanish", es: "Español", pt: "Espanhol" }
-  level: { en: "Full professional proficiency", es: "Competencia profesional completa", pt: "Proficiência profissional plena" }
+  level: { en: "Fluent", es: "Fluido", pt: "Fluente" }
+  level_score: 4
 
 - name: { en: "English", es: "Inglés", pt: "Inglês" }
-  level: { en: "Professional working proficiency", es: "Competencia profesional", pt: "Proficiência profissional" }
+  level: { en: "Professional", es: "Profesional", pt: "Profissional" }
+  level_score: 3
