@@ -55,7 +55,7 @@ disableKinds = ["page", "section", "taxonomy", "term", "RSS"]
 [[module.mounts]]
   source = "static"
   target = "static"
-  files = ["! **.orig.jpg", "! **.full.*"]
+  files = ["! **.orig.*", "! **.full.*"]
 
 [[module.mounts]]
   source = "assets"
