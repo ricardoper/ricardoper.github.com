@@ -11,9 +11,8 @@ nav_show: "Show navigation"
 nav_hide: "Hide navigation"
 lang_label: "Language"
 
-hero_greeting: "My name is Ricardo Pereira"
-hero_intro: "I was born in Porto (Portugal) and I am a <strong>Senior Architect</strong>, <strong>Systems Administrator</strong> and <strong>Electronics Technician</strong>. I enjoy constantly learning and keeping my mind active."
-hero_cta: 'Want to know more <a href="#about">about me</a>? Have a look at <a href="#about">my profile</a>.'
+hero_intro: "<strong>Cloud Architect &amp; Software Engineer</strong> with a background in electronics. I design distributed, scalable systems with a focus on quality and optimisation."
+hero_cta: 'Learn <a href="#about">more about me</a> or see my <a href="#technologies">experience</a>.'
 scroll_to_about: "Go to About me"
 scroll_to_top: "Back to top"
 
@@ -33,3 +32,13 @@ web_developer: "Senior Web Developer"
 sysadmin: "Systems Administrator"
 
 design_by: "Based on design by"
+
+skip_to_content: "Skip to content"
+show_older: "Show earlier positions ({{ .Count }})"
+print_cv: "Save CV as PDF"
+cookies_link: "Cookies"
+consent_title: "Cookies"
+consent_text: "This website would like to use Google Analytics cookies (_ga, _ga_*) to measure visits. They are only set if you accept; the rest of the site does not use cookies."
+consent_accept: "Accept"
+consent_reject: "Reject"
+theme_dark: "Dark mode"

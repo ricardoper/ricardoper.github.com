@@ -1,0 +1,18 @@
+{{- /* Structured data (schema.org Person) built from the site data */ -}}
+{{- $sameAs := slice }}
+{{- range hugo.Data.links }}{{ if not (hasPrefix .url "mailto:") }}{{ $sameAs = $sameAs | append .url }}{{ end }}{{ end }}
+{{- $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" site.Title
+    "url" .Permalink
+    "image" ("imgs/profile.jpg" | absURL)
+    "jobTitle" (i18n "subtitle")
+    "description" (i18n "site_description")
+    "sameAs" $sameAs }}
+{{- range hugo.Data.technology }}
+  {{- if and .current (not (isset $person "worksFor")) }}
+    {{- $person = merge $person (dict "worksFor" (dict "@type" "Organization" "name" .org)) }}
+  {{- end }}
+{{- end }}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>

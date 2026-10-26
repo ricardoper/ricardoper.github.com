@@ -1,58 +1,39 @@
-{{- /* Context: dict "id" <section id> "title" <i18n key> "items" <data list> */ -}}
+{{- /* Context: dict "id" <section id> "title" <i18n key> "items" <data list> ["fold" true]
+       With "fold", positions that started before params.foldBefore go inside a <details>. */ -}}
+{{- $recent := slice }}
+{{- $older := slice }}
+{{- if .fold }}
+  {{- $limit := int site.Params.foldBefore }}
+  {{- range .items }}
+    {{- if ge (int (substr .start 0 4)) $limit }}{{ $recent = $recent | append . }}{{ else }}{{ $older = $older | append . }}{{ end }}
+  {{- end }}
+  {{- /* never leave a section without a visible position */ -}}
+  {{- if and (not $recent) $older }}
+    {{- $recent = slice (index $older 0) }}
+    {{- $older = after 1 $older }}
+  {{- end }}
+{{- else }}
+  {{- $recent = .items }}
+{{- end }}
 <section id="{{ .id }}" class="resume">
     <div class="row spacer">
         <div class="three columns header-col">
             <h2><span>{{ i18n .title }}</span></h2>
         </div>
 
-        <div class="nine columns main-col">
-            {{- range .items }}
-            {{- $item := . }}
-            <article class="row item">
-                <div class="twelve columns">
-                    <h3>{{ partial "tr.html" (or .role .title) }}</h3>
+        <div class="nine columns main-col timeline">
+            {{- range $recent }}
+            {{ partial "resume-item.html" . }}
+            {{- end }}
 
-                    <p class="info">
-                        {{- partial "tr.html" (or .org "") }} <span aria-hidden="true">&bull;</span> {{ partial "period.html" . }}
-                        {{- with .logo }}
-                        {{- if strings.HasSuffix . ".svg" }}
-                        <img class="logo" src="/imgs/logos/{{ . }}" alt="{{ partial "tr.html" $item.org }}" loading="lazy" decoding="async">
-                        {{- else }}
-                        {{- $img := imageConfig (printf "static/imgs/logos/%s" .) }}
-                        <img class="logo" src="/imgs/logos/{{ . }}" alt="{{ partial "tr.html" $item.org }}" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="lazy" decoding="async">
-                        {{- end }}
-                        {{- end }}
-                    </p>
+            {{- if $older }}
 
-                    {{- with .about }}
-
-                    <p>{{ partial "tr.html" . | safeHTML }}</p>
-                    {{- end }}
-
-                    {{- if .groups }}
-
-                    <dl>
-                        {{- range .groups }}
-                        <dt><strong>{{ i18n .title }}:</strong></dt>
-                        {{- range .items }}
-                        <dd>{{ partial "tr.html" . }}</dd>
-                        {{- end }}
-                        {{- end }}
-                    </dl>
-                    {{- else if or .details .facts }}
-
-                    <dl>
-                        <dt><strong>{{ i18n "description_label" }}:</strong></dt>
-                        {{- range .details }}
-                        <dd>{{ partial "tr.html" . }}</dd>
-                        {{- end }}
-                        {{- range .facts }}
-                        <dd>{{ i18n .key }}: {{ .text }}</dd>
-                        {{- end }}
-                    </dl>
-                    {{- end }}
-                </div>
-            </article>
+            <details class="older">
+                <summary>{{ i18n "show_older" (dict "Count" (len $older)) }}</summary>
+                {{- range $older }}
+                {{ partial "resume-item.html" . }}
+                {{- end }}
+            </details>
             {{- end }}
         </div>
     </div>

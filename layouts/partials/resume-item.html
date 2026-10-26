@@ -1,0 +1,47 @@
+{{- /* One CV entry. Context: a data item (see data/technology.yaml) */ -}}
+{{- $item := . }}
+<article class="row item{{ if .current }} current{{ end }}">
+    <div class="twelve columns">
+        <h3>{{ partial "tr.html" (or .role .title) }}</h3>
+
+        <p class="info">
+            {{- partial "tr.html" (or .org "") }} <span aria-hidden="true">&bull;</span> {{ partial "period.html" . }}
+            {{- with .logo }}
+            {{- if strings.HasSuffix . ".svg" }}
+            <img class="logo" src="/imgs/logos/{{ . }}" alt="{{ partial "tr.html" $item.org }}" loading="lazy" decoding="async">
+            {{- else }}
+            {{- $img := imageConfig (printf "static/imgs/logos/%s" .) }}
+            <img class="logo" src="/imgs/logos/{{ . }}" alt="{{ partial "tr.html" $item.org }}" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="lazy" decoding="async">
+            {{- end }}
+            {{- end }}
+        </p>
+
+        {{- with .about }}
+
+        <p>{{ partial "tr.html" . | safeHTML }}</p>
+        {{- end }}
+
+        {{- if .groups }}
+
+        <dl>
+            {{- range .groups }}
+            <dt><strong>{{ i18n .title }}:</strong></dt>
+            {{- range .items }}
+            <dd>{{ partial "tr.html" . }}</dd>
+            {{- end }}
+            {{- end }}
+        </dl>
+        {{- else if or .details .facts }}
+
+        <dl>
+            <dt><strong>{{ i18n "description_label" }}:</strong></dt>
+            {{- range .details }}
+            <dd>{{ partial "tr.html" . }}</dd>
+            {{- end }}
+            {{- range .facts }}
+            <dd>{{ i18n .key }}: {{ .text }}</dd>
+            {{- end }}
+        </dl>
+        {{- end }}
+    </div>
+</article>

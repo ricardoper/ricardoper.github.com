@@ -6,8 +6,11 @@
 </head>
 
 <body>
+<a class="skip-link" href="#main">{{ i18n "skip_to_content" }}</a>
 
 {{ block "main" . }}{{ end }}
+
+{{ partial "consent.html" . }}
 
 </body>
 </html>

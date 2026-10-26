@@ -10,12 +10,13 @@
             <li><a href="#electronics">{{ i18n "nav_electronics" }}</a></li>
             <li><a href="#education">{{ i18n "nav_education" }}</a></li>
             <li class="lang">{{ partial "langmenu.html" . }}</li>
+            <li class="theme"><button type="button" class="theme-toggle" aria-pressed="false" aria-label="{{ i18n "theme_dark" }}" title="{{ i18n "theme_dark" }}" hidden></button></li>
         </ul>
     </nav>
 
     <div class="row banner">
         <div class="banner-text">
-            <h1 class="responsive-headline">{{ i18n "hero_greeting" }}</h1>
+            <h1 class="responsive-headline">{{ site.Title }}</h1>
 
             <p class="tagline">
                 {{ i18n "hero_intro" | safeHTML }}

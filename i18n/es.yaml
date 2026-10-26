@@ -11,9 +11,8 @@ nav_show: "Mostrar navegación"
 nav_hide: "Ocultar navegación"
 lang_label: "Idioma"
 
-hero_greeting: "Me llamo Ricardo Pereira"
-hero_intro: "He nacido en Porto (Portugal) y soy <strong>Arquitecto Senior</strong>, <strong>Administrador de Sistemas</strong> y <strong>Técnico de Electrónica</strong>. Me gusta estar en constante aprendizaje y activo de mente."
-hero_cta: '¿Quieres saber más <a href="#about">sobre mí</a>? Echa un vistazo a <a href="#about">mi perfil</a>.'
+hero_intro: "<strong>Cloud Architect &amp; Software Engineer</strong> con formación en electrónica. Diseño sistemas distribuidos y escalables, con foco en la calidad y la optimización."
+hero_cta: 'Conoce <a href="#about">más sobre mí</a> o consulta mi <a href="#technologies">experiencia</a>.'
 scroll_to_about: "Ir a Sobre mí"
 scroll_to_top: "Volver arriba"
 
@@ -33,3 +32,13 @@ web_developer: "Programador Web Senior"
 sysadmin: "Administrador de Sistemas"
 
 design_by: "Basado en el diseño de"
+
+skip_to_content: "Saltar al contenido"
+show_older: "Ver puestos anteriores ({{ .Count }})"
+print_cv: "Guardar CV en PDF"
+cookies_link: "Cookies"
+consent_title: "Cookies"
+consent_text: "Esta web quiere usar cookies de Google Analytics (_ga, _ga_*) para medir las visitas. Solo se instalan si aceptas; el resto del sitio no usa cookies."
+consent_accept: "Aceptar"
+consent_reject: "Rechazar"
+theme_dark: "Modo oscuro"

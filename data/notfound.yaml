@@ -1,0 +1,16 @@
+# Texts of the 404 page (GitHub Pages serves a single /404.html, so it shows the three languages)
+- lang: en
+  title: "Page not found"
+  text: "The page you are looking for does not exist or has been moved."
+  home: "Go to the home page"
+  href: "/"
+- lang: es
+  title: "Página no encontrada"
+  text: "La página que buscas no existe o se ha movido."
+  home: "Ir a la página de inicio"
+  href: "/es/"
+- lang: pt
+  title: "Página não encontrada"
+  text: "A página que procura não existe ou foi movida."
+  home: "Ir para a página inicial"
+  href: "/pt/"

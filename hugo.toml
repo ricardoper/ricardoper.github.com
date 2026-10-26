@@ -10,6 +10,12 @@ defaultContentLanguageInSubdir = false
 disableAliases = true
 disableKinds = ["page", "section", "taxonomy", "term", "RSS"]
 
+[params]
+  # Positions that started before this year are folded under "show earlier positions"
+  foldBefore = 2014
+  # Google Analytics 4 measurement ID. It is only loaded after the visitor accepts cookies.
+  googleAnalytics = "G-YRQRG04M8R"
+
 [module.hugoVersion]
   min = "0.168.0"
 

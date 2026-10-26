@@ -1,10 +1,12 @@
 {{- $default := (index .AllTranslations 0).Language.Lang }}
     <meta charset="utf-8">
+    <script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
     {{- if and .IsHome (eq site.Language.Lang $default) }}
     {{ partial "lang-redirect.html" . }}
     {{- end }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0f0f0f">
+    <meta name="color-scheme" content="light dark">
 
     <title>{{ site.Title }}</title>
     <meta name="author" content="{{ site.Title }}">
@@ -50,5 +52,4 @@
     {{- $js := resources.Get "js/app.js" | minify | fingerprint }}
     <script defer src="{{ $js.RelPermalink }}"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRQRG04M8R"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YRQRG04M8R');</script>
+    {{ partial "jsonld.html" . }}

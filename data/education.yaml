@@ -1,61 +1,9 @@
 # title, org: plain string, or a map with one entry per language (en / es / pt)
 # start alone = single year; start + end = range
 
-- title: "Hadoop, MapReduce, Hive, Pig, & Spark"
-  org: Udemy
-  start: "2016"
-
-- title: "Big Data and Hadoop Essentials"
-  org: Udemy
-  start: "2016"
-
-- title: "Hadoop Starter Kit"
-  org: Udemy
-  start: "2016"
-
-- title: "OrientDB - Getting Started"
-  org: Udemy
-  start: "2015"
-
-- title: "M102: MongoDB for DBAs"
-  org: "MongoDB, Inc."
-  start: "2015"
-
-- title: "Creative, Serious and Playful Science of Android Apps"
-  org: Coursera
-  start: "2014"
-
 - title: "Cisco CCNA Exploration"
   org: Cisco Academy
   start: "2012"
-
-- title:
-    en: "MySQL Database Administration"
-    es: "Administración de Bases de Datos MySQL"
-    pt: "Administração de Bases de Dados MySQL"
-  org:
-    en: "CITA and USAL"
-    es: "CITA y USAL"
-    pt: "CITA e USAL"
-  start: "2010"
-
-- title:
-    en: "Web Page Programming with PHP and MySQL"
-    es: "Programación de páginas Web con PHP y MySQL"
-    pt: "Programação de Páginas Web com PHP e MySQL"
-  org: ESICE
-  start: "2009"
-
-- title: "Photoshop 7.0"
-  org: IVAFE
-  start: "2007"
-
-- title:
-    en: "Introduction to Linux"
-    es: "Iniciación a Linux"
-    pt: "Iniciação ao Linux"
-  org: Porlande
-  start: "2005"
 
 - title:
     en: "ESD5 Course - ESD Coordinators (Electrostatic Discharge) - IEC 61340 Standard"

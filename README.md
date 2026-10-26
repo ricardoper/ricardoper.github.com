@@ -24,6 +24,13 @@ make preview      # build and serve public/ like production
 - `mk/`: Makefile fragments. `make header-images` rebuilds the dark header backgrounds from `static/imgs/headerBackground.orig.jpg`.
 - `hugo.toml`: languages and site configuration.
 
+## Features worth knowing
+- **Print / save as PDF**: `Ctrl+P` (or the footer link) produces a clean A4 CV from the same data, in the current language. Folded positions are opened automatically while printing. Styles: `@media print` at the end of `assets/css/style.css`.
+- **Dark mode** follows the system preference (`prefers-color-scheme`); the moon/sun button in the menu overrides it and remembers the choice (`localStorage.theme`). Colors of the CV sections are CSS variables defined in the "Color scheme" block of `assets/css/style.css`. **Animations** respect `prefers-reduced-motion`.
+- **Earlier positions** (started before `params.foldBefore` in `hugo.toml`, 2014) are folded under "Show earlier positions"; a section always keeps at least its most recent entry visible.
+- **Cookies**: Google Analytics (`params.googleAnalytics`) is only loaded after the visitor accepts the notice; the choice is kept in `localStorage` for ~13 months and can be changed from the footer ("Cookies"). The language choice is also kept in `localStorage` (not a cookie).
+- **SEO**: JSON-LD `Person` generated from `data/`, `hreflang` alternates, per-language sitemap, trilingual `404.html`.
+
 ## Deploy
 `.github/workflows/hugo.yaml` builds the site on every push to `main`/`master` and publishes it to GitHub Pages (pull requests are only built, not published).
 One-time setup: Settings > Pages > Source must be **GitHub Actions**.

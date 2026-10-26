@@ -5,6 +5,11 @@
 
             <nav class="langs" aria-label="{{ i18n "lang_label" }}">{{ partial "langlinks.html" . }}</nav>
 
+            <ul class="tools">
+                <li><button type="button" class="linklike" data-print hidden>{{ i18n "print_cv" }}</button></li>
+                <li><button type="button" class="linklike" data-consent-open hidden>{{ i18n "cookies_link" }}</button></li>
+            </ul>
+
             <ul class="copyright">
                 <li><small>{{ site.Title }} &copy; {{ now.Year }}</small></li>
                 <li><small>{{ i18n "design_by" }} <a href="http://www.styleshout.com/" rel="nofollow">Styleshout</a></small></li>

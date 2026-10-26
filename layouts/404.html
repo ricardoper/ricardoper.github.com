@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="color-scheme" content="light dark">
+    <title>404 - {{ site.Title }}</title>
+    {{- $css := resources.Get "css/style.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
+
+<body class="notfound">
+<main id="main">
+    <h1>404</h1>
+    {{- range hugo.Data.notfound }}
+    <section lang="{{ .lang }}">
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+        <p><a href="{{ .href }}">{{ .home }}</a></p>
+    </section>
+    {{- end }}
+</main>
+</body>
+</html>

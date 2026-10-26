@@ -1,0 +1,8 @@
+{{- /* Cookie notice. Google Analytics is only loaded after "Accept" (see assets/js/app.js). */ -}}
+<aside id="consent" class="consent" role="region" aria-label="{{ i18n "consent_title" }}" data-ga="{{ site.Params.googleAnalytics }}" hidden>
+    <p>{{ i18n "consent_text" }}</p>
+    <div class="actions">
+        <button type="button" data-consent="denied">{{ i18n "consent_reject" }}</button>
+        <button type="button" data-consent="granted">{{ i18n "consent_accept" }}</button>
+    </div>
+</aside>
