@@ -1,0 +1,9 @@
+# Issuer logo shown on a certification card (static/imgs/certs/). Key = the `org` of data/certifications.yaml.
+# A certification with its own `badge` shows that instead; without either it shows a generic medal.
+"Udemy": udemy.svg
+"Redis Labs": redis.svg
+"MongoDB, Inc.": mongodb.svg
+"Cockroach Labs": cockroachlabs.svg
+"Coursera": coursera.svg
+"Packt": packt.svg
+"HashiCorp": hashicorp.svg

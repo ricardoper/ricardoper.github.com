@@ -1,0 +1,44 @@
+{{- /* Certifications list (data/certifications.yaml). Those issued before params.foldCertsBefore are folded. */ -}}
+{{- $limit := int site.Params.foldCertsBefore }}
+{{- $featured := slice }}
+{{- $recent := slice }}
+{{- $older := slice }}
+{{- range hugo.Data.certifications }}
+  {{- if .featured }}{{ $featured = $featured | append . }}
+  {{- else if ge (int (substr .date 0 4)) $limit }}{{ $recent = $recent | append . }}{{ else }}{{ $older = $older | append . }}{{ end }}
+{{- end }}
+<section id="certifications" class="resume">
+    <div class="row spacer">
+        <div class="three columns header-col">
+            <h2><span>{{ i18n "certifications_title" }}</span></h2>
+        </div>
+
+        <div class="nine columns main-col">
+            {{- if $featured }}
+            <ul class="certs featured-list">
+                {{- range $featured }}
+                {{ partial "cert-item.html" . }}
+                {{- end }}
+            </ul>
+            {{- end }}
+
+            <ul class="certs">
+                {{- range $recent }}
+                {{ partial "cert-item.html" . }}
+                {{- end }}
+            </ul>
+
+            {{- if $older }}
+
+            <details class="older">
+                <summary>{{ i18n "show_older_certs" (dict "Count" (len $older)) }}</summary>
+                <ul class="certs">
+                    {{- range $older }}
+                    {{ partial "cert-item.html" . }}
+                    {{- end }}
+                </ul>
+            </details>
+            {{- end }}
+        </div>
+    </div>
+</section>

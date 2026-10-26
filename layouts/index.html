@@ -6,13 +6,13 @@
 {{ partial "about.html" . }}
 
 
-{{ partial "resume.html" (dict "id" "technologies" "title" "technology_title" "items" hugo.Data.technology "fold" true) }}
-
-
-{{ partial "resume.html" (dict "id" "electronics" "title" "electronics_title" "items" hugo.Data.electronics "fold" true) }}
+{{ partial "resume.html" (dict "id" "experience" "title" "experience_title" "items" hugo.Data.experience "fold" true) }}
 
 
 {{ partial "resume.html" (dict "id" "education" "title" "education_title" "items" hugo.Data.education) }}
+
+
+{{ partial "certifications.html" . }}
 </main>
 
 

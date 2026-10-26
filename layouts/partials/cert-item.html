@@ -1,0 +1,19 @@
+{{- /* One certification. Context: a data item (see data/certifications.yaml).
+       Image: its own badge, else the issuer logo (data/cert_issuers.yaml), else a generic medal. */ -}}
+{{- $file := or .badge (index hugo.Data.cert_issuers .org) }}
+<li{{ if .featured }} class="featured"{{ end }}>
+    <span class="cert-img">
+        {{- if not $file }}
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a6 6 0 0 0-3.9 10.6L7 22l5-2.5 5 2.5-1.1-9.4A6 6 0 0 0 12 2zm0 2.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6z"/></svg>
+        {{- else if strings.HasSuffix $file ".svg" }}
+        <img src="/imgs/certs/{{ $file }}" alt="" loading="lazy" decoding="async">
+        {{- else }}
+        {{- $img := imageConfig (printf "static/imgs/certs/%s" $file) }}
+        <img src="/imgs/certs/{{ $file }}" alt="" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="lazy" decoding="async">
+        {{- end }}
+    </span>
+    <span class="cert-body">
+        {{- if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}<strong>{{ .name }}</strong>{{ end }}
+        <span class="meta">{{ .org }} <span aria-hidden="true">&bull;</span> {{ partial "time.html" .date }}</span>
+    </span>
+</li>

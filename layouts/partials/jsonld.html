@@ -10,7 +10,7 @@
     "jobTitle" (i18n "subtitle")
     "description" (i18n "site_description")
     "sameAs" $sameAs }}
-{{- range hugo.Data.technology }}
+{{- range hugo.Data.experience }}
   {{- if and .current (not (isset $person "worksFor")) }}
     {{- $person = merge $person (dict "worksFor" (dict "@type" "Organization" "name" .org)) }}
   {{- end }}

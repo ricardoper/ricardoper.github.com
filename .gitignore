@@ -17,3 +17,7 @@ Thumbs.db
 # --- Local scratch ---
 /tmp/
 *.log
+
+# --- Others ---
+Basic_LinkedInDataExport_*
+

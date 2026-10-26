@@ -1,0 +1,138 @@
+# Certifications exported from LinkedIn, newest first (names are proper names, so they are not translated).
+#   date   "YYYY-MM"      url   credential page (optional)
+#   featured: true   shown first, in large cards
+#   badge  official badge image (static/imgs/certs/); otherwise the issuer logo from data/cert_issuers.yaml is used
+# Those issued before params.foldCertsBefore in hugo.toml are folded.
+
+- name: "Certified SAFe® 6 Practitioner"
+  org: "Scaled Agile, Inc."
+  date: "2025-05"
+  url: "https://www.credly.com/badges/06d4fad8-3c51-41a7-8ebf-b6f60e266c66/linked_in_profile"
+  badge: "safe.webp"
+
+- name: "AWS Certified Solutions Architect - Professional"
+  org: "Amazon Web Services (AWS)"
+  date: "2025-05"
+  badge: "aws-sap-2025.webp"
+  featured: true
+  url: "https://www.credly.com/badges/88510709-b506-4a22-9250-53a4600bab11/public_url"
+
+- name: "HashiCorp Certified: Vault Associate (w/ Hands-On Labs)"
+  org: "Udemy"
+  date: "2024-10"
+  url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-b4cce0ab-de22-45e1-8813-4244f238e6e4.pdf"
+
+- name: "AWS Partner: Generative AI Essentials"
+  org: "Amazon Web Services (AWS)"
+  date: "2024-03"
+  url: "https://www.credly.com/badges/56a73b79-ea3d-49e6-8a48-715795586bf5/linked_in_profile"
+  badge: "aws-genai.webp"
+
+- name: "HashiCorp Certified: Terraform Associate (003)"
+  org: "HashiCorp"
+  date: "2023-08"
+  badge: "terraform-003.webp"
+  featured: true
+  url: "https://www.credly.com/badges/93debb3b-d5a8-43d2-96e5-51712d5e14d1/public_url"
+
+- name: "AWS Certified Solutions Architect - Professional"
+  org: "Amazon Web Services (AWS)"
+  date: "2022-04"
+  badge: "aws-sap-2022.webp"
+  featured: true
+  url: "https://www.credly.com/badges/c1b04024-d7fe-4ea4-9991-c1c6a6a956a4/public_url"
+
+- name: "Ultimate AWS Certified Solutions Architect Professional"
+  org: "Udemy"
+  date: "2022-04"
+  url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-acbb2e91-b0bd-4489-9071-32ea19fcd61a.pdf"
+
+- name: "HashiCorp Certified: Terraform Associate 2021"
+  org: "Udemy"
+  date: "2021-05"
+  url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-a46a7748-7433-481e-9be6-88001627c694.pdf"
+
+- name: "Getting Started With CockroachDB"
+  org: "Cockroach Labs"
+  date: "2021-03"
+  url: "https://university.cockroachlabs.com/award/certification/9bf1ce42-26c8-3372-9e24-176bff614d1e/view-ext"
+
+- name: "Redis University RU330"
+  org: "Redis Labs"
+  date: "2021-03"
+  url: "https://university.redislabs.com/certificates/91c67821d7b54b7588925ec3314473f2"
+
+- name: "Redis University RU202"
+  org: "Redis Labs"
+  date: "2021-03"
+  url: "https://university.redislabs.com/certificates/ad0448982b5b4fdb95e1bea087b03193"
+
+- name: "Redis University RU101"
+  org: "Redis Labs"
+  date: "2021-03"
+  url: "https://university.redislabs.com/certificates/691d5138951040008af2fb9ad0dce1c4"
+
+- name: "The Golang Workshop"
+  org: "Packt"
+  date: "2020-04"
+  url: "https://www.credential.net/d798850e-7274-426c-b656-ddca49b70f2f"
+
+- name: "The Python Workshop"
+  org: "Packt"
+  date: "2020-04"
+  url: "https://www.credential.net/3481cfe1-8f46-4a02-af9f-decd3c0d4adc"
+
+- name: "The PHP Workshop"
+  org: "Packt"
+  date: "2020-04"
+  url: "https://www.credential.net/27ee4848-3a14-4a33-bef1-a007ae99e6a3"
+
+- name: "Big Data Basics: Hadoop, MapReduce, Hive, Pig, & Spark"
+  org: "Udemy"
+  date: "2016-01"
+  url: "https://www.udemy.com/certificate/UC-KF9XG0HL/"
+
+- name: "Big Data and Hadoop Essentials"
+  org: "Udemy"
+  date: "2016-01"
+  url: "https://www.udemy.com/certificate/UC-I2N6921A/"
+
+- name: "Hadoop Starter Kit"
+  org: "Udemy"
+  date: "2016-01"
+  url: "https://www.udemy.com/certificate/UC-1B3HLONA/"
+
+- name: "Learn Angular JS for Beginners - Lite"
+  org: "Udemy"
+  date: "2015-12"
+  url: "https://www.udemy.com/certificate/UC-MK4KPWA0/"
+
+- name: "Quickstart AngularJS"
+  org: "Udemy"
+  date: "2015-12"
+  url: "https://www.udemy.com/certificate/UC-5NWDDLRX/"
+
+- name: "Sensu - Introduction"
+  org: "Udemy"
+  date: "2015-12"
+  url: "https://www.udemy.com/certificate/UC-MO03W4LK/"
+
+- name: "Basics of Scrum, Agile and Project Delivery"
+  org: "Udemy"
+  date: "2015-12"
+  url: "https://www.udemy.com/certificate/UC-L1SAKT0W/"
+
+- name: "OrientDB - Getting Started"
+  org: "Udemy"
+  date: "2015-12"
+  url: "https://www.udemy.com/certificate/UC-P003F6J6/"
+
+- name: "M102: MongoDB for DBAs"
+  org: "MongoDB, Inc."
+  date: "2015-05"
+  url: "http://university.mongodb.com/course_completion/a745d1824f8f4573993e709a97f94e5c"
+  featured: true
+
+- name: "Creative, Serious and Playful Science of Android Apps"
+  org: "Coursera"
+  date: "2014-02"
